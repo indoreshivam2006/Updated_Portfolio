@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shivam's Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="main1.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">SHIVAM</div>
+            <div class="menu-icon">
+                <i class="fas fa-bars hamburger"></i>
+                <i class="fas fa-times cross"></i>
+            </div>
+            <nav>
+                <a href="#Home"><i class="fas fa-home"></i> Home</a>
+                <a href="#About"><i class="fas fa-user"></i> About</a>
+                <a href="#Skills"><i class="fas fa-code"></i> Skills</a>
+                <a href="#Projects"><i class="fas fa-project-diagram"></i> Projects</a>
+                <a href="#Contact"><i class="fas fa-envelope"></i> Contact</a>
+            </nav>
+
+        </header>
+
+        <section class="hero" id="Home">
+            <div class="text-content">
+                <h1 class="hero-title" id="hero-title">It's Shiv</h1>
+                <p>Aspiring Developer | Passionate about Building Solutions</p>
+                <p>Hi, I'm Shivam Indore, a 4th-semester B.Tech student in
+                    Computer Science Engineering. I'm passionate about coding,
+                    problem-solving, and building innovative solutions.</p>
+                <a href="#About"><button class="CV">Explore More</button></a>
+                <div class="tags">
+                    <a
+                        href="https://www.linkedin.com/in/shivam-indore-52a947312/"><button>LinkedIn</button></a>
+                    <a
+                        href="https://github.com/indoreshivam2006"><button>GitHub</button></a>
+                    <a
+                        href="https://www.instagram.com/hey_its.shiv09/?hl=en"><button>Instagram</button></a>
+                    <a
+                        href="https://wa.me/9321504940"><button>WhatsApp</button></a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="me.jpg"
+                    alt="Shivam's Profile">
+            </div>
+        </section>
+
+        <section class="about" id="About">
+            <div class="container">
+                <div class="image-content">
+                    <img
+                        src="about.png"
+                        alt="About Me">
+                </div>
+                <div class="text-box">
+                    <h2><b>About Me</b></h2>
+                    <p><b>Hello!</b> I'm Shivam Indore, a 4th-semester B.Tech
+                        student in Computer Science Engineering. I'm passionate
+                        about software development and enjoy solving problems
+                        through code. I have hands-on experience in building web
+                        applications, working with databases, and collaborating
+                        on team projects. I'm proficient in programming
+                        languages like Python, JavaScript, and Java. My goal is
+                        to grow as a developer, contribute to impactful
+                        projects, and make a difference through technology.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="Skills" id="Skills">
+            <div class="container">
+                <div class="text-box">
+                    <h2><b>Skills</b></h2>
+                    <ul>
+                        <li><strong>Programming Languages:</strong> (Python,
+                            JavaScript, Java, C++)</li>
+                        <li><strong>Web Development:</strong> (HTML, CSS,
+                            JavaScript)</li>
+                        <li><strong>Database:</strong> (MySQL)</li>
+                        <li><strong>Tools:</strong> (GitHub, VS Code, Subline)
+                        </li>
+                    </ul>
+                </div>
+                <div class="image-content">
+                    <img
+                        src="Skills.png"
+                        alt="Skills">
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="Projects">
+            <div class="container">
+                <div class="image-content">
+                    <img src="Project.png" alt="Projects">
+                </div>
+                <div class="text-box">
+                    <h2><b>Projects</b></h2>
+                    <ul>
+                        <li><strong>Portfolio Website:</strong> Designed a
+                            responsive portfolio. (HTML, CSS, JS)</li>
+                        <li><strong>Calculator:</strong> Build a Calculator
+                            (JavaScript, HTML, CSS)</li>
+                        <li><strong>Physics stimulation
+                                Website:</strong>(JavaScript, HTML, CSS,
+                            chart.js)</li>
+                        <li><strong>To Do List:</strong>Built a task management
+                            app. (JavaScript, Local Storage)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-container">
+            <div class="project-card">
+                <img src="phy.png" alt="National Science Day">
+                <h3>National Science Day</h3>
+                <p>Physics simulations Website</p>
+                <a
+                    href="https://github.com/indoreshivam2006/National-Science-Day-project"
+                    class="github-btn">Code at GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <img src="cal.png"
+                    alt="Simple Calculator">
+                <h3>Simple Calculator</h3>
+                <p>A basic calculator built with HTML, CSS, and JavaScript.</p>
+                <a href="https://github.com/indoreshivam2006/Calculator"
+                    class="github-btn">Code at GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <img src="Project.png" alt="More Projects">
+                <h3>More Projects</h3>
+                <p>To See more Projects kindly click the button</p>
+                <a href="https://github.com/indoreshivam2006?tab=repositories"
+                    class="github-btn">GitHub
+                    source</a>
+            </div>
+        </section>
+
+        <section class="contact" id="Contact">
+            <div class="contact-container">
+                <form action="https://api.web3forms.com/submit" method="POST"
+                    class="contact-left">
+                    <h2 class="contact-title">Contact Me</h2>
+                    <input type="hidden" name="access_key"
+                        value="231f60b8-470a-45e6-ad42-96742e578a07">
+                    <input type="text" name="name" placeholder="Your Name"
+                        required>
+                    <input type="email" name="email" placeholder="Your Email"
+                        required>
+                    <textarea name="message" placeholder="Your Message" rows="5"
+                        required></textarea>
+                    <button type="submit" class="contact-btn"><b>Send
+                            Message</b></button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div>© 2025 Shivam | All Rights Reserved</div>
+        </footer>
+    </body>
+</html>
