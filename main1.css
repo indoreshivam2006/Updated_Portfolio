@@ -357,7 +357,7 @@ nav a:hover {
     margin-top: 20px;
 }
 
-.tags button {
+.social-link {
     background: white;
     color: black;
     padding: 8px 15px;
@@ -366,11 +366,27 @@ nav a:hover {
     font-size: 14px;
     cursor: pointer;
     transition: transform 0.3s, background 0.3s;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
 }
 
-.tags button:hover {
+.social-link i {
+    font-size: 16px;
+    color: black;
+    pointer-events: none;
+}
+
+.social-link:hover {
     transform: scale(1.1);
     background: #ffcc00;
+    color: black;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .about,
@@ -505,12 +521,12 @@ nav a:hover {
 }
 
 .contact-left {
-    background: rgba(0, 19, 46, 0.488);
+    background: rgba(0, 19, 46, 0.7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     padding: 30px;
     border-radius: 40px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
     width: 100%;
 }
 
@@ -754,8 +770,8 @@ footer {
         border-radius: 20px;
         width: 100%;
         background: rgba(0, 19, 46, 0.7);
-        backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
     }
 
     .contact-title {
