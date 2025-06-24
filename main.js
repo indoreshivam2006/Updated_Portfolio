@@ -615,4 +615,42 @@ document.addEventListener('DOMContentLoaded', function () {
             body.classList.remove('menu-open');
         });
     });
+
+    // Form submission handling
+    const contactForm = document.querySelector('.contact-left');
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const form = e.target;
+            const submitButton = form.querySelector('.contact-btn');
+            
+            try {
+                // Disable button and show loading state
+                submitButton.disabled = true;
+                submitButton.innerHTML = 'Sending...';
+                
+                const formData = new FormData(form);
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                if (!response.ok) throw new Error('Submission failed');
+                
+                // Show success message
+                submitButton.innerHTML = 'Message Sent!';
+                form.reset();
+            } catch (error) {
+                // Show error message
+                submitButton.innerHTML = 'Error - Try Again';
+                console.error('Form submission error:', error);
+            } finally {
+                // Reset button state after 3 seconds
+                setTimeout(() => {
+                    submitButton.disabled = false;
+                    submitButton.innerHTML = '<b>Send Message</b>';
+                }, 3000);
+            }
+        });
+    }
 });
